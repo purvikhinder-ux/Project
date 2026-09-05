@@ -53,8 +53,6 @@
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="dashboardBtn" max="32767" attributes="0"/>
                       <Component id="issueBtn" alignment="0" max="32767" attributes="0"/>
-                      <Component id="registerationbtn" alignment="0" max="32767" attributes="0"/>
-                      <Component id="loginbtn" max="32767" attributes="0"/>
                       <Component id="bookmanagebtn" max="32767" attributes="0"/>
                       <Component id="memberdetailbtn" max="32767" attributes="0"/>
                   </Group>
@@ -69,15 +67,11 @@
                   <Component id="dashboardBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="issueBtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="registerationbtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                  <Component id="loginbtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
                   <Component id="bookmanagebtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="38" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                   <Component id="memberdetailbtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="248" max="32767" attributes="0"/>
+                  <EmptySpace pref="364" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -97,22 +91,6 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="issueBtnActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="registerationbtn">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Registeration"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="registerationbtnActionPerformed"/>
-          </Events>
-        </Component>
-        <Component class="javax.swing.JButton" name="loginbtn">
-          <Properties>
-            <Property name="text" type="java.lang.String" value="Login"/>
-          </Properties>
-          <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="loginbtnActionPerformed"/>
           </Events>
         </Component>
         <Component class="javax.swing.JButton" name="bookmanagebtn">

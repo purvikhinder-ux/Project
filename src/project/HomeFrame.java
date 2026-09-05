@@ -35,8 +35,6 @@ public class HomeFrame extends javax.swing.JFrame {
         sideBar = new javax.swing.JPanel();
         dashboardBtn = new javax.swing.JButton();
         issueBtn = new javax.swing.JButton();
-        registerationbtn = new javax.swing.JButton();
-        loginbtn = new javax.swing.JButton();
         bookmanagebtn = new javax.swing.JButton();
         memberdetailbtn = new javax.swing.JButton();
         contentPanel = new javax.swing.JPanel();
@@ -50,12 +48,6 @@ public class HomeFrame extends javax.swing.JFrame {
 
         issueBtn.setText("Issue Book");
         issueBtn.addActionListener(this::issueBtnActionPerformed);
-
-        registerationbtn.setText("Registeration");
-        registerationbtn.addActionListener(this::registerationbtnActionPerformed);
-
-        loginbtn.setText("Login");
-        loginbtn.addActionListener(this::loginbtnActionPerformed);
 
         bookmanagebtn.setText("Book Management");
         bookmanagebtn.addActionListener(this::bookmanagebtnActionPerformed);
@@ -72,8 +64,6 @@ public class HomeFrame extends javax.swing.JFrame {
                 .addGroup(sideBarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(dashboardBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(issueBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(registerationbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(loginbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bookmanagebtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(memberdetailbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(138, Short.MAX_VALUE))
@@ -85,15 +75,11 @@ public class HomeFrame extends javax.swing.JFrame {
                 .addComponent(dashboardBtn)
                 .addGap(35, 35, 35)
                 .addComponent(issueBtn)
-                .addGap(34, 34, 34)
-                .addComponent(registerationbtn)
-                .addGap(34, 34, 34)
-                .addComponent(loginbtn)
-                .addGap(35, 35, 35)
+                .addGap(39, 39, 39)
                 .addComponent(bookmanagebtn)
-                .addGap(38, 38, 38)
+                .addGap(32, 32, 32)
                 .addComponent(memberdetailbtn)
-                .addContainerGap(248, Short.MAX_VALUE))
+                .addContainerGap(364, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout contentPanelLayout = new javax.swing.GroupLayout(contentPanel);
@@ -128,7 +114,7 @@ public class HomeFrame extends javax.swing.JFrame {
     
     
     private void showPanel(JPanel panel) {
-        
+//        bpvw;hvtprh4iupgiu4
         contentPanel.removeAll();
         contentPanel.setLayout(new java.awt.BorderLayout());
         contentPanel.add(panel,java.awt.BorderLayout.CENTER);
@@ -155,16 +141,8 @@ public class HomeFrame extends javax.swing.JFrame {
     private void bookmanagebtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bookmanagebtnActionPerformed
         // TODO add your handling code here:
         
-        new bookmanagementp();
+        showPanel (new bookmanagementp());
     }//GEN-LAST:event_bookmanagebtnActionPerformed
-
-    private void loginbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_loginbtnActionPerformed
-
-    private void registerationbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerationbtnActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_registerationbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -196,9 +174,7 @@ public class HomeFrame extends javax.swing.JFrame {
     private javax.swing.JPanel contentPanel;
     private javax.swing.JButton dashboardBtn;
     private javax.swing.JButton issueBtn;
-    private javax.swing.JButton loginbtn;
     private javax.swing.JButton memberdetailbtn;
-    private javax.swing.JButton registerationbtn;
     private javax.swing.JPanel sideBar;
     // End of variables declaration//GEN-END:variables
 }
