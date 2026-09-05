@@ -37,6 +37,7 @@ public class HomeFrame extends javax.swing.JFrame {
         issueBtn = new javax.swing.JButton();
         bookmanagebtn = new javax.swing.JButton();
         memberdetailbtn = new javax.swing.JButton();
+        returnbookbtn = new javax.swing.JButton();
         contentPanel = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -55,6 +56,9 @@ public class HomeFrame extends javax.swing.JFrame {
         memberdetailbtn.setText("Member Details");
         memberdetailbtn.addActionListener(this::memberdetailbtnActionPerformed);
 
+        returnbookbtn.setText("Return Book");
+        returnbookbtn.addActionListener(this::returnbookbtnActionPerformed);
+
         javax.swing.GroupLayout sideBarLayout = new javax.swing.GroupLayout(sideBar);
         sideBar.setLayout(sideBarLayout);
         sideBarLayout.setHorizontalGroup(
@@ -65,7 +69,8 @@ public class HomeFrame extends javax.swing.JFrame {
                     .addComponent(dashboardBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(issueBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bookmanagebtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(memberdetailbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(memberdetailbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(returnbookbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(138, Short.MAX_VALUE))
         );
         sideBarLayout.setVerticalGroup(
@@ -75,11 +80,13 @@ public class HomeFrame extends javax.swing.JFrame {
                 .addComponent(dashboardBtn)
                 .addGap(35, 35, 35)
                 .addComponent(issueBtn)
-                .addGap(39, 39, 39)
+                .addGap(50, 50, 50)
+                .addComponent(returnbookbtn)
+                .addGap(48, 48, 48)
                 .addComponent(bookmanagebtn)
-                .addGap(32, 32, 32)
+                .addGap(47, 47, 47)
                 .addComponent(memberdetailbtn)
-                .addContainerGap(364, Short.MAX_VALUE))
+                .addContainerGap(267, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout contentPanelLayout = new javax.swing.GroupLayout(contentPanel);
@@ -144,6 +151,12 @@ public class HomeFrame extends javax.swing.JFrame {
         showPanel (new bookmanagementp());
     }//GEN-LAST:event_bookmanagebtnActionPerformed
 
+    private void returnbookbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_returnbookbtnActionPerformed
+        // TODO add your handling code here:
+        
+        showPanel (new returnBook());
+    }//GEN-LAST:event_returnbookbtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -175,6 +188,7 @@ public class HomeFrame extends javax.swing.JFrame {
     private javax.swing.JButton dashboardBtn;
     private javax.swing.JButton issueBtn;
     private javax.swing.JButton memberdetailbtn;
+    private javax.swing.JButton returnbookbtn;
     private javax.swing.JPanel sideBar;
     // End of variables declaration//GEN-END:variables
 }

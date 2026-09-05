@@ -55,6 +55,7 @@
                       <Component id="issueBtn" alignment="0" max="32767" attributes="0"/>
                       <Component id="bookmanagebtn" max="32767" attributes="0"/>
                       <Component id="memberdetailbtn" max="32767" attributes="0"/>
+                      <Component id="returnbookbtn" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace pref="138" max="32767" attributes="0"/>
               </Group>
@@ -67,11 +68,13 @@
                   <Component id="dashboardBtn" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
                   <Component id="issueBtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="39" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
+                  <Component id="returnbookbtn" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
                   <Component id="bookmanagebtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                   <Component id="memberdetailbtn" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="364" max="32767" attributes="0"/>
+                  <EmptySpace pref="267" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -107,6 +110,14 @@
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="memberdetailbtnActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="returnbookbtn">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Return Book"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="returnbookbtnActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>
